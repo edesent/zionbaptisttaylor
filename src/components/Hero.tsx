@@ -27,7 +27,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-[2] text-center text-white max-w-3xl px-5 py-10">
         <p className="text-xs sm:text-sm font-semibold tracking-[0.32em] uppercase text-brass-light mb-5 animate-fade-up animation-delay-200">
-          Reformed Baptist Church · Taylor, Michigan
+          Expository Preaching · A Caring Church Family · Taylor, MI
         </p>
         <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] font-semibold leading-[1.05] mb-6 animate-fade-up animation-delay-400">
           Zion Baptist Church
