@@ -5,23 +5,19 @@ export default function Welcome() {
     <section id="welcome" className="py-28 bg-bg">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Portrait — replace this block with:
-              <img src="/pastor.jpg" alt="Pastor Michael R. Jones" className="w-full object-cover" />
-              once a photo is available. */}
+          {/* Pastor & family */}
           <AnimateOnScroll>
-            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/5] bg-ink">
-              <div className="absolute inset-0 bg-gradient-to-br from-ink-soft via-ink to-ink-deep" />
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_25%,rgba(176,138,79,0.22),transparent_60%)]" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
-                <span className="font-serif text-7xl text-brass/80 mb-4">&ldquo;</span>
-                <p className="font-serif text-2xl italic text-white/90 leading-relaxed">
-                  Preach the word; be instant in season, out of season.
-                </p>
-                <span className="mt-5 text-xs font-semibold tracking-[0.2em] uppercase text-brass-light">
-                  2 Timothy 4:2
-                </span>
-              </div>
-            </div>
+            <figure className="rounded-2xl overflow-hidden shadow-xl bg-ink">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/pastor-and-family.jpg"
+                alt="Pastor Michael R. Jones and his family"
+                className="w-full h-full object-cover"
+              />
+              <figcaption className="bg-ink text-center text-sm text-white/70 py-3 px-4">
+                Pastor Michael R. Jones &amp; family
+              </figcaption>
+            </figure>
           </AnimateOnScroll>
 
           {/* Text */}

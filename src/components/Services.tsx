@@ -49,8 +49,17 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="relative py-28 overflow-hidden bg-ink-deep">
+      {/* Building photo background */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/building.jpg"
+        alt="Zion Baptist Church building in Taylor, Michigan"
+        className="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      {/* Slate overlay keeps the text legible */}
+      <div className="absolute inset-0 bg-gradient-to-b from-ink-deep/90 via-ink-deep/80 to-ink-deep/95" />
       {/* Subtle radiance */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(176,138,79,0.10),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(176,138,79,0.12),transparent_60%)]" />
 
       <div className="relative z-[2] max-w-7xl mx-auto px-6">
         {/* Header */}
