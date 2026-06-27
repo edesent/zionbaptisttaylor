@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Beliefs from "@/components/Beliefs";
 import ScriptureBanner from "@/components/ScriptureBanner";
 import Sermons from "@/components/Sermons";
+import Give from "@/components/Give";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
