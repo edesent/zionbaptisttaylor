@@ -4,20 +4,13 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-ink-deep"
     >
-      {/* Background — looping muted clip of the pastor preaching.
-          Drop the file at public/hero-video.mp4 (and an optional poster at
-          public/hero-poster.jpg). Until then, the deep slate background shows. */}
+      {/* Background — church exterior photo */}
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/hero-poster.jpg"
+        <img
+          src="/church-outside.jpg"
+          alt="Zion Baptist Church building exterior"
           className="w-full h-full object-cover object-[center_35%]"
-        >
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
+        />
       </div>
 
       {/* Gradient overlay — keeps text legible over the footage */}
