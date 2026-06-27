@@ -63,6 +63,7 @@ export default function Home() {
         <Beliefs />
         <ScriptureBanner />
         <Sermons />
+        <Give />
         <Contact />
       </main>
       <Footer />
