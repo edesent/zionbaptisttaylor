@@ -1,5 +1,6 @@
 import { getRecentVideos } from "@/lib/youtube";
 import VideoGrid from "./VideoGrid";
+import AnimateOnScroll from "./AnimateOnScroll";
 
 export default async function Sermons() {
   const videos = (await getRecentVideos()).slice(0, 6);
@@ -7,18 +8,36 @@ export default async function Sermons() {
   return (
     <section id="sermons" className="py-28 bg-bg">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-brass-dark mb-3">
-            Sit Under the Word
-          </span>
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-text-dark mb-4">
-            Recent Sermons
-          </h2>
-          <p className="text-lg text-text-light">
-            Expository preaching through the Scriptures. Watch the latest messages, or join us
-            live each Lord&rsquo;s Day.
-          </p>
+        {/* Intro — Pastor Jones preaching + heading */}
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+          <AnimateOnScroll>
+            <figure className="rounded-2xl overflow-hidden shadow-xl bg-ink max-w-md mx-auto md:mx-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/pastor-preaching.jpg"
+                alt="Pastor Michael R. Jones preaching from the pulpit at Zion Baptist Church"
+                className="w-full h-auto"
+              />
+            </figure>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll delay={150}>
+            <div className="text-center md:text-left">
+              <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-brass-dark mb-3">
+                Sit Under the Word
+              </span>
+              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-text-dark mb-5">
+                Recent Sermons
+              </h2>
+              <p className="text-lg text-text-light leading-relaxed mb-4">
+                Week by week, Pastor Michael R. Jones opens the Scriptures verse by verse,
+                lifting up Christ and feeding His people from the Word.
+              </p>
+              <p className="text-text-light leading-relaxed">
+                Watch the latest messages below, or join us live each Lord&rsquo;s Day.
+              </p>
+            </div>
+          </AnimateOnScroll>
         </div>
 
         {videos.length > 0 ? (

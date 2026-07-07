@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Welcome from "@/components/Welcome";
 import Services from "@/components/Services";
 import Beliefs from "@/components/Beliefs";
+import LifeAtZion from "@/components/LifeAtZion";
 import ScriptureBanner from "@/components/ScriptureBanner";
 import Sermons from "@/components/Sermons";
 import Give from "@/components/Give";
@@ -61,6 +62,7 @@ export default function Home() {
         <Welcome />
         <Services />
         <Beliefs />
+        <LifeAtZion />
         <ScriptureBanner />
         <Sermons />
         <Give />
