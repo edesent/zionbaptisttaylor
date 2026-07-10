@@ -4,13 +4,19 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-ink-deep"
     >
-      {/* Background — church exterior photo */}
+      {/* Background — looping muted clip of the pastor preaching.
+          Poster (public/hero-poster.jpg) shows while the video loads. */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/church-outside.jpg"
-          alt="Zion Baptist Church building exterior"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/hero-poster.jpg"
           className="w-full h-full object-cover object-[center_35%]"
-        />
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
       </div>
 
       {/* Gradient overlay — keeps text legible over the footage */}
