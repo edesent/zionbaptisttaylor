@@ -76,18 +76,6 @@ export default function Contact() {
                 </div>
               </div>
             </AnimateOnScroll>
-
-            <AnimateOnScroll delay={300}>
-              <div className="mt-8 p-7 bg-white rounded-xl border-l-4 border-brass shadow-sm">
-                <h3 className="font-serif text-xl font-semibold text-text-dark mb-2">What to Expect</h3>
-                <p className="text-[0.95rem] text-text-light leading-relaxed">
-                  You&rsquo;ll be welcomed by friendly faces and a reverent, unhurried service.
-                  Come as you are. Our worship centers on the singing of God&rsquo;s praise,
-                  heartfelt prayer, and the faithful preaching of the Scriptures. We&rsquo;d love
-                  to meet you and your family.
-                </p>
-              </div>
-            </AnimateOnScroll>
           </div>
 
           {/* Map */}
