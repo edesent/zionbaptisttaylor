@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 export default function Welcome() {
@@ -37,9 +38,14 @@ export default function Welcome() {
               </p>
               <p className="text-text-light leading-relaxed mb-4">
                 Under the ministry of{" "}
-                <strong className="text-text-body">Pastor Michael R. Jones</strong>, the
-                Scriptures are preached verse by verse, book by book — because we believe the
-                Word of God is sufficient to feed, correct, and grow His people.
+                <Link
+                  href="/about/pastor"
+                  className="font-semibold text-brass-dark underline underline-offset-2 hover:text-ink transition-colors"
+                >
+                  Pastor Michael R. Jones
+                </Link>
+                , the Scriptures are preached verse by verse, book by book — because we
+                believe the Word of God is sufficient to feed, correct, and grow His people.
               </p>
               <p className="text-text-light leading-relaxed mb-7">
                 Standing in the historic Particular (Reformed) Baptist tradition, our worship
@@ -52,6 +58,30 @@ export default function Welcome() {
               >
                 Plan Your Visit
               </a>
+
+              <p className="mt-6 text-sm text-text-light">
+                Get to know us:{" "}
+                <Link
+                  href="/about/pastor"
+                  className="font-semibold text-brass-dark hover:text-ink transition-colors"
+                >
+                  Meet Pastor Jones
+                </Link>{" "}
+                ·{" "}
+                <Link
+                  href="/about/leadership"
+                  className="font-semibold text-brass-dark hover:text-ink transition-colors"
+                >
+                  Our Elders &amp; Deacons
+                </Link>{" "}
+                ·{" "}
+                <Link
+                  href="/about"
+                  className="font-semibold text-brass-dark hover:text-ink transition-colors"
+                >
+                  About Zion
+                </Link>
+              </p>
             </div>
           </AnimateOnScroll>
         </div>

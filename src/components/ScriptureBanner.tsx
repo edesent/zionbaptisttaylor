@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ScriptureBanner() {
   return (
     <section className="relative py-24 overflow-hidden bg-ink">
@@ -16,6 +18,12 @@ export default function ScriptureBanner() {
           </cite>
         </blockquote>
         <div className="w-12 h-px bg-brass mx-auto mt-8" />
+        <Link
+          href="/gospel"
+          className="mt-8 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.12em] uppercase text-brass-light hover:text-white transition-colors"
+        >
+          How can I know I am a Christian? <span aria-hidden>&rarr;</span>
+        </Link>
       </div>
     </section>
   );

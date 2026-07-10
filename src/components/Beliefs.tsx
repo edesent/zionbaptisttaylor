@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const beliefs = [
@@ -55,6 +56,28 @@ export default function Beliefs() {
               </div>
             </AnimateOnScroll>
           ))}
+        </div>
+
+        {/* Deeper links */}
+        <div className="mt-12 flex flex-wrap justify-center gap-3">
+          <Link
+            href="/beliefs"
+            className="inline-flex items-center gap-2 bg-ink text-white font-semibold text-sm tracking-wide uppercase px-7 py-3 rounded-full border-2 border-ink hover:bg-ink-soft hover:border-ink-soft hover:-translate-y-0.5 transition-all"
+          >
+            Read our full Statement of Faith
+          </Link>
+          <Link
+            href="/covenant"
+            className="inline-flex items-center gap-2 text-ink font-semibold text-sm tracking-wide uppercase px-7 py-3 rounded-full border-2 border-ink/25 hover:border-ink hover:-translate-y-0.5 transition-all"
+          >
+            Our Church Covenant
+          </Link>
+          <Link
+            href="/faq"
+            className="inline-flex items-center gap-2 text-ink font-semibold text-sm tracking-wide uppercase px-7 py-3 rounded-full border-2 border-ink/25 hover:border-ink hover:-translate-y-0.5 transition-all"
+          >
+            FAQ
+          </Link>
         </div>
       </div>
     </section>

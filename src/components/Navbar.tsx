@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -16,6 +17,11 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  // On subpages the section anchors don't exist, so point them at the homepage
+  // (e.g. "/#welcome"); on the homepage keep the in-page smooth-scroll behavior.
+  const resolve = (hash: string) => (isHome ? hash : `/${hash}`);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -30,6 +36,8 @@ export default function Navbar() {
   ) => {
     setMenuOpen(false);
     if (!href.startsWith("#")) return;
+    // Off the homepage: let the browser follow the resolved "/#hash" link.
+    if (!isHome) return;
     e.preventDefault();
     const el = document.querySelector(href);
     if (el) {
@@ -50,7 +58,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Brand */}
         <a
-          href="#home"
+          href={resolve("#home")}
           onClick={(e) => handleLinkClick(e, "#home")}
           className="flex flex-col leading-none text-white"
         >
@@ -67,7 +75,7 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
-                href={link.href}
+                href={resolve(link.href)}
                 onClick={(e) => handleLinkClick(e, link.href)}
                 className="text-white/85 text-sm font-medium px-4 py-2 rounded-md hover:text-white hover:bg-white/10 transition-all"
               >
@@ -121,7 +129,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
-                  href={link.href}
+                  href={resolve(link.href)}
                   onClick={(e) => handleLinkClick(e, link.href)}
                   className="block text-white/85 text-base font-medium px-4 py-3 rounded-md hover:text-white hover:bg-white/10 transition-all"
                 >

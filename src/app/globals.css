@@ -70,3 +70,111 @@ body {
 .animate-scroll-bounce {
   animation: scrollBounce 2s ease infinite;
 }
+
+/* ---- Subpage article typography (Modern Sanctuary) ---- */
+.prose-zion {
+  color: var(--color-text-body);
+  font-size: 1.075rem;
+  line-height: 1.75;
+}
+.prose-zion > * + * {
+  margin-top: 1.4em;
+}
+.prose-zion h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(1.7rem, 4vw, 2.15rem);
+  line-height: 1.2;
+  color: var(--color-text-dark);
+  margin-top: 2.4em;
+}
+.prose-zion h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(1.35rem, 3vw, 1.6rem);
+  line-height: 1.25;
+  color: var(--color-text-dark);
+  margin-top: 1.8em;
+}
+.prose-zion h2 + *,
+.prose-zion h3 + * {
+  margin-top: 0.7em;
+}
+.prose-zion p,
+.prose-zion li {
+  color: var(--color-text-body);
+}
+.prose-zion strong {
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+.prose-zion em {
+  font-style: italic;
+}
+.prose-zion a {
+  color: var(--color-brass-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: color 0.2s ease;
+}
+.prose-zion a:hover {
+  color: var(--color-ink);
+}
+.prose-zion ul,
+.prose-zion ol {
+  padding-left: 1.35rem;
+}
+.prose-zion ul {
+  list-style: disc;
+}
+.prose-zion ol {
+  list-style: decimal;
+}
+.prose-zion li + li {
+  margin-top: 0.55em;
+}
+.prose-zion li::marker {
+  color: var(--color-brass);
+}
+.prose-zion blockquote {
+  border-left: 3px solid var(--color-brass);
+  padding: 0.2rem 0 0.2rem 1.4rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.2em;
+  color: var(--color-text-body);
+}
+.prose-zion blockquote cite,
+.prose-zion blockquote footer {
+  display: block;
+  margin-top: 0.6em;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-brass-dark);
+}
+.prose-zion hr {
+  border: 0;
+  border-top: 1px solid rgb(21 36 58 / 0.1);
+  margin: 2.6em 0;
+}
+
+/* Respect reduced-motion preferences everywhere */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fade-in-up,
+  .animate-fade-up,
+  .animate-scroll-bounce {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

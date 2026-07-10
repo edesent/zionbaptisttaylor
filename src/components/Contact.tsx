@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const MAP_QUERY = "8500 Pardee Road, Taylor, MI 48180";
@@ -36,6 +37,12 @@ export default function Contact() {
                     <br />
                     Taylor, MI 48180
                   </p>
+                  <Link
+                    href="/directions"
+                    className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-brass-dark hover:text-ink transition-colors"
+                  >
+                    Driving directions &amp; routes <span aria-hidden>&rarr;</span>
+                  </Link>
                 </div>
               </div>
             </AnimateOnScroll>
@@ -74,6 +81,23 @@ export default function Contact() {
                     Wednesday: 6:30 PM
                   </p>
                 </div>
+              </div>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll delay={250}>
+              <div className="flex flex-wrap gap-3 pt-7">
+                <Link
+                  href="/faq"
+                  className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-ink px-6 py-3 rounded-full border-2 border-ink/20 hover:border-ink hover:-translate-y-0.5 transition-all"
+                >
+                  Common Questions
+                </Link>
+                <Link
+                  href="/membership"
+                  className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-ink px-6 py-3 rounded-full border-2 border-ink/20 hover:border-ink hover:-translate-y-0.5 transition-all"
+                >
+                  Become a Member
+                </Link>
               </div>
             </AnimateOnScroll>
           </div>

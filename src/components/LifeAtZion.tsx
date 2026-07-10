@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const moments = [
@@ -65,6 +66,15 @@ export default function LifeAtZion() {
               </figure>
             </AnimateOnScroll>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/missions"
+            className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-brass-dark hover:text-ink transition-colors"
+          >
+            Our heart for missions <span aria-hidden>&rarr;</span>
+          </Link>
         </div>
       </div>
     </section>
