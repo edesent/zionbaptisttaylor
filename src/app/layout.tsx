@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     "Pastor Michael Jones Taylor MI",
     "church near me Taylor Michigan",
     "Sunday worship Taylor MI",
+    "1689 confession church Michigan",
     "Bible believing church Downriver Detroit",
   ],
   authors: [{ name: "Zion Baptist Church" }],
