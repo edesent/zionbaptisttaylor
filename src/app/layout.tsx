@@ -109,7 +109,15 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${inter.variable} antialiased`}
     >
-      <body className="min-h-screen flex flex-col">{children}</body>
+      <body className="min-h-screen flex flex-col">
+        {children}
+        <script
+          src="https://slackwebsitechat.vercel.app/widget/wbc-chat.js"
+          data-api="https://slackwebsitechat.vercel.app"
+          data-key="wbc_b5a00dcdced61cafb03666f87706b7cead89d071edf65b89"
+          defer
+        />
+      </body>
     </html>
   );
 }
