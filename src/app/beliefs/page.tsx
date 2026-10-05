@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/beliefs" },
   title: "What We Believe — Statement of Faith",
   description:
     "Zion Baptist Church stands in the Particular Baptist tradition. Read our summary Statement of Faith — the Trinity, the Scriptures, the person and work of Christ, salvation by grace, and the local church.",
