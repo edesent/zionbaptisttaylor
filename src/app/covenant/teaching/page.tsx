@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/covenant/teaching" },
   title: "Teaching on the Church Covenant",
   description:
     "Pastor Michael R. Jones explains the purpose and meaning of Zion's church covenant, section by section — why churches covenant together and what it means to be in covenant.",
