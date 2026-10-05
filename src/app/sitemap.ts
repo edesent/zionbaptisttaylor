@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/gospel", priority: 0.7 },
     { path: "/missions", priority: 0.5 },
     { path: "/directions", priority: 0.6 },
+    { path: "/live", priority: 0.7 },
   ];
 
   return routes.map(({ path, priority }) => ({

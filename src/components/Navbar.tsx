@@ -85,9 +85,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="https://www.facebook.com/zionbaptistchurchtaylor"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/live"
               className="ml-2 inline-flex items-center gap-2 bg-brass text-ink-deep text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-brass-light hover:-translate-y-0.5 transition-all"
             >
               <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
@@ -139,9 +137,7 @@ export default function Navbar() {
             ))}
             <li className="mt-4">
               <a
-                href="https://www.facebook.com/zionbaptistchurchtaylor"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/live"
                 className="block text-center bg-brass text-ink-deep font-semibold px-6 py-3 rounded-full hover:bg-brass-light transition-all"
               >
                 Watch Live

@@ -46,9 +46,7 @@ export default function Hero() {
             Plan Your Visit
           </a>
           <a
-            href="https://www.facebook.com/zionbaptistchurchtaylor"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/live"
             className="inline-flex items-center gap-2 text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full border-2 border-white/40 hover:bg-white/10 hover:border-white hover:-translate-y-0.5 transition-all"
           >
             <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
