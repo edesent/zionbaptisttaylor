@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/membership" },
   title: "How Do I Become a Member?",
   description:
     "Learn how to become a member of Zion Baptist Church in Taylor, MI — the three paths to membership: by profession of faith and baptism, by transfer of letter, or by statement.",
