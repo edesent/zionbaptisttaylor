@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about/leadership" },
   title: "Meet Our Elders & Deacons",
   description:
     "Meet the elders and deacons who serve Zion Baptist Church in Taylor, MI — the men who help lead, teach, and care for our congregation.",
