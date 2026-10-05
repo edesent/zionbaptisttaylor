@@ -22,7 +22,8 @@ export default function Navbar() {
   const isHome = pathname === "/";
   // On subpages the section anchors don't exist, so point them at the homepage
   // (e.g. "/#welcome"); on the homepage keep the in-page smooth-scroll behavior.
-  const resolve = (hash: string) => (isHome ? hash : `/${hash}`);
+  const resolve = (href: string) =>
+    !href.startsWith("#") || isHome ? href : `/${href}`;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
