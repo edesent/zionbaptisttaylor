@@ -15,8 +15,8 @@ const churchSchema = {
   "@type": "Church",
   name: "Zion Baptist Church",
   alternateName: "Zion Baptist Church Taylor",
-  url: "https://www.zionbaptistchurchtaylor.com",
-  image: "https://www.zionbaptistchurchtaylor.com/og-image.jpg",
+  url: "https://www.ziontaylor.org",
+  image: "https://www.ziontaylor.org/og-image.jpg",
   description:
     "A Christ-centered, Word-driven Reformed (Particular) Baptist church in Taylor, Michigan. Expository preaching under Pastor Michael R. Jones.",
   telephone: "+1-313-291-3128",

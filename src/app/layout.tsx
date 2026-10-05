@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.zionbaptistchurchtaylor.com"),
+  metadataBase: new URL("https://www.ziontaylor.org"),
   title: {
     default: "Zion Baptist Church — Reformed Baptist Church in Taylor, MI",
     template: "%s | Zion Baptist Church",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Zion Baptist Church — Taylor, MI",
     description:
       "A Christ-centered, Word-driven Reformed Baptist church in Taylor, Michigan. Join us for Sunday worship and Wednesday Bible study. Pastor Michael R. Jones preaches verse by verse — all are welcome.",
-    url: "https://www.zionbaptistchurchtaylor.com",
+    url: "https://www.ziontaylor.org",
     type: "website",
     locale: "en_US",
     siteName: "Zion Baptist Church",

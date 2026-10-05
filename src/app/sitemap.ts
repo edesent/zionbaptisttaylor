@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://www.zionbaptistchurchtaylor.com";
+const BASE = "https://www.ziontaylor.org";
 
 // Keep in sync with metadataBase/canonical in layout.tsx.
 export default function sitemap(): MetadataRoute.Sitemap {
