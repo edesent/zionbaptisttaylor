@@ -31,9 +31,10 @@ export default function PastorPage() {
           Mortgage.
         </p>
         <p>
-          He earned an M.Div. from Michigan Theological Seminary and is
-          completing his PhD in New Testament at the University of Chester (UK),
-          where his research focuses on Paul&rsquo;s theology of suffering.
+          He earned an M.Div. from Michigan Theological Seminary where he
+          specialized in systematic theology and Greek. Pastor Jones also has a
+          PhD in New Testament from the University of Chester (UK), where his
+          research focus was Paul&rsquo;s theology of suffering.
         </p>
         <p>
           In addition to serving as full-time pastor at Zion, Pastor Jones is an
