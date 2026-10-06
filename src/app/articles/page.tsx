@@ -24,7 +24,7 @@ export default function ArticlesPage() {
   return (
     <PageShell
       eyebrow="Articles"
-      title="From the Pastor&rsquo;s Desk"
+      title="From the Pastor&rsquo;s Study"
       lede="Bible teaching, Reformed Baptist doctrine, and help for the Christian life from Zion Baptist Church in Taylor, Michigan."
     >
       {articles.length === 0 ? (
