@@ -90,6 +90,9 @@ export const metadata: Metadata = {
     email: true,
   },
   category: "religion",
+  verification: {
+    google: "P7vHPGAYXoTXQH0-IselTwIPaCZyx0K9Er3-rCnHwXE",
+  },
 };
 
 export const viewport: Viewport = {
