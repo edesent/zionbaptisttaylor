@@ -14,7 +14,7 @@ export default function PastorPage() {
       <figure className="float-none sm:float-right sm:ml-8 mb-8 w-full sm:w-64 mx-auto">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/pastor-jones.jpg"
+          src="/pastor-jones-2026.jpg"
           alt="Pastor Michael R. Jones"
           className="w-full rounded-2xl shadow-lg border border-ink/[.06]"
         />
