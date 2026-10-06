@@ -48,8 +48,8 @@ export default function PastorPage() {
           Taylor Ministerial Fellowship.
         </p>
         <p>
-          He and his wife, Tondra, originally from the Atlanta area, met in the
-          late &rsquo;80s when they were students in college. The Joneses have two
+          He and his wife, Tondra, originally from the Atlanta area, met in
+          Bible college. The Joneses have two
           children: Spencer, who serves in the U.S. Army, and Sophia, who is in
           college.
         </p>
