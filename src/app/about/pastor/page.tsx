@@ -62,7 +62,7 @@ export default function PastorPage() {
           You can find out more about Pastor Jones and his convictions about the
           Bible, theology, and ministry by visiting his{" "}
           <a
-            href="https://www.youtube.com/@zionbaptistchurchtaylormi"
+            href="https://www.youtube.com/@michaelrjones37"
             target="_blank"
             rel="noopener noreferrer"
           >
