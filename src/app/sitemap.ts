@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAllArticles } from "@/lib/articles";
 
 const BASE = "https://www.ziontaylor.org";
 
@@ -18,11 +19,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/missions", priority: 0.5 },
     { path: "/directions", priority: 0.6 },
     { path: "/live", priority: 0.7 },
+    { path: "/articles", priority: 0.7 },
   ];
 
-  return routes.map(({ path, priority }) => ({
+  const pages: MetadataRoute.Sitemap = routes.map(({ path, priority }) => ({
     url: `${BASE}${path}`,
     changeFrequency: "monthly",
     priority,
   }));
+
+  // Every published article (drafts are excluded on the live site).
+  const articles: MetadataRoute.Sitemap = getAllArticles()
+    .filter((a) => !a.draft)
+    .map((a) => ({
+      url: `${BASE}/articles/${a.slug}`,
+      lastModified: a.date || undefined,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    }));
+
+  return [...pages, ...articles];
 }

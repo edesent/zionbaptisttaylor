@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/faq" },
   title: "Frequently Asked Questions",
   description:
     "Answers to common questions about Zion Baptist Church in Taylor, MI — our purpose, beliefs, worship, Bible version, communion, and what makes us distinctive.",

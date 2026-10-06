@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/directions" },
   title: "Directions",
   description:
     "Directions to Zion Baptist Church, 8500 Pardee Road, Taylor, MI 48180 — in the Downriver community of metro Detroit, between Wick and Ecorse.",

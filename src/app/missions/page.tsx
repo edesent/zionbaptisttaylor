@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/missions" },
   title: "Missions",
   description:
     "Zion Baptist Church supports missionaries and missions works here in the United States and around the world — partnering not only in giving, but in relationship and prayer.",

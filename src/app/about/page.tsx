@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About Zion Baptist Church",
   description:
     "Zion Baptist Church is an independent, Reformed Baptist church in Taylor, MI. Meet our pastor and leadership, read what we believe, and learn how to become a member.",

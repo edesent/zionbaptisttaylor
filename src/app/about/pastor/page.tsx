@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about/pastor" },
   title: "Meet Pastor Michael R. Jones",
   description:
     "Meet Michael R. Jones, pastor of Zion Baptist Church in Taylor, MI — an expository preacher, professor, and longtime servant of the Downriver Detroit community.",

@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/covenant" },
   title: "Our Church Covenant",
   description:
     "The church covenant of Zion Baptist Church, Taylor, MI — the promises by which our members walk together in Christ, in brotherly love, to the glory of God.",

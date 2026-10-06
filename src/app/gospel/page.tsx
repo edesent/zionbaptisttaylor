@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/gospel" },
   title: "How Can I Know I Am a Christian?",
   description:
     "The good news of Jesus Christ, explained simply from Scripture. Our eternal destiny is not based on the good we do, but on faith in Christ alone.",

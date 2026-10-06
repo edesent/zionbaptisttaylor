@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { getLiveStatus } from "@/lib/live";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/live" },
   title: "Watch Live",
   description:
     "Watch the Zion Baptist Church livestream from Taylor, Michigan — Sunday worship at 11:00 AM.",
