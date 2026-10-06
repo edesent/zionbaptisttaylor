@@ -6,12 +6,12 @@ import { getAllArticles, formatDate } from "@/lib/articles";
 export const metadata: Metadata = {
   title: "Articles",
   description:
-    "Articles from Zion Baptist Church in Taylor, Michigan: Bible teaching, Reformed Baptist doctrine, and help for the Christian life from Pastor Michael R. Jones.",
+    "Articles from Zion Baptist Church in Taylor, Michigan: Bible teaching, historic Baptist doctrine, and help for the Christian life from Pastor Michael R. Jones.",
   alternates: { canonical: "/articles" },
   openGraph: {
     title: "Articles | Zion Baptist Church",
     description:
-      "Bible teaching, Reformed Baptist doctrine, and help for the Christian life from Zion Baptist Church in Taylor, Michigan.",
+      "Bible teaching, historic Baptist doctrine, and help for the Christian life from Zion Baptist Church in Taylor, Michigan.",
     url: "/articles",
     type: "website",
     images: ["/og-image.jpg"],
@@ -25,7 +25,7 @@ export default function ArticlesPage() {
     <PageShell
       eyebrow="Articles"
       title="From the Pastor&rsquo;s Study"
-      lede="Bible teaching, Reformed Baptist doctrine, and help for the Christian life from Zion Baptist Church in Taylor, Michigan."
+      lede="Bible teaching, historic Baptist doctrine, and help for the Christian life from Zion Baptist Church in Taylor, Michigan."
     >
       {articles.length === 0 ? (
         <p className="text-lg italic text-text-light">
