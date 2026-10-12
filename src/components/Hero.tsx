@@ -4,18 +4,23 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-ink-deep"
     >
-      {/* Background — looping muted clip of the pastor preaching.
-          Poster (public/hero-poster.jpg) shows while the video loads. */}
+      {/* Background — looping muted clip of the pastor preaching
+          (October 11, 2026 sermon, 0:50–1:15).
+          Poster (public/hero-poster-2026-10-11.jpg) shows while the video loads. */}
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
           muted
           loop
           playsInline
-          poster="/hero-poster.jpg"
+          preload="auto"
+          poster="/hero-poster-2026-10-11.jpg"
           className="w-full h-full object-cover object-[center_35%]"
         >
-          <source src="/hero-video.mp4" type="video/mp4" />
+          <source
+            src="https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/eSc7EfLufdabnosyL5Yexsw5VLET_TEM/hero-video-2026-10-11-doQheU9ezragpAaZuX7Mm5eNSTILkV.mp4"
+            type="video/mp4"
+          />
         </video>
       </div>
 
