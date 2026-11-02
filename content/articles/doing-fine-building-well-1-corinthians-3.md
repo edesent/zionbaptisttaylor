@@ -1,11 +1,11 @@
 ---
 title: Doing Fine Is Not the Same as Building Well
 date: 2026-11-01
-summary: A church can feel healthy and still be building with straw. From 1 Corinthians 3:10–15, why the real question is not whether we are doing fine but whether we are building well on Christ before the fire tests our work.
+summary: A church can feel healthy and still be building with straw. From 1 Corinthians 3:10–17, why the real question is not whether we are doing fine but whether we are building well on Christ before the fire tests our work.
 author: Pastor Michael R. Jones
 ---
 
-*1 Corinthians 3:10–15*
+*1 Corinthians 3:10–17*
 
 Just before dawn on June 24, 2021, part of the twelve-story Champlain Towers South condominium in Surfside, Florida, collapsed, killing ninety-eight people. In October 2018, an engineer's report had found major structural damage. About a month later, the town's building official told the condo board that the building appeared to be "in very good shape."
 
